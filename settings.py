@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crm',
-    'graphene_django',
-    'django_filters',
+    # Third-party
+    "graphene_django",
+    "django_filters",
+    # Local apps
+    "crm",
 ]
 
 MIDDLEWARE = [
@@ -101,6 +103,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+GRAPHENE = {
+    "SCHEMA": "alx_backend_graphql_crm.schema.schema"
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
